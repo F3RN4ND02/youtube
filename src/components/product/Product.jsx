@@ -1,4 +1,9 @@
+import React from "react";
+import axios from "axios";
 import "./product.css";
+
+
+
 
 const Product = ({img,link}) => {
   return (
