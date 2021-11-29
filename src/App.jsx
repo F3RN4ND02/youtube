@@ -12,7 +12,7 @@ const App = () => {
   return (
     <div
       style={{
-        backgroundColor: darkMode ? "#222" : "white",
+        backgroundColor: darkMode ? "#0D0D0D" : "#D9D9D9",
         color: darkMode && "white",
       }}
     >

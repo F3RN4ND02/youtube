@@ -1,21 +1,17 @@
-import React from "react";
-import axios from "axios";
+import React,{ useContext } from "react";
+import { ThemeContext } from '../../context'
 import "./product.css";
 
-
-
-
-const Product = ({img,link}) => {
+const Product = ({link,name,language,pushed}) => {
+const theme = useContext(ThemeContext);
+const darkMode = theme.state.darkMode;
   return (
     <div className="p">
-      <div className="p-browser">
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-        <div className="p-circle"></div>
-      </div>
-      <a href={link} target="_blank" rel="noreferrer">
-        <img src={img} alt="" className="p-img" />
-      </a>
+        <h4 className='title'>{name}</h4>
+        <h6 className='pushed'>{pushed}</h6>
+        <h6 className='language'>{language}</h6>
+
+
     </div>
   );
 };

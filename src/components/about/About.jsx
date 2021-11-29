@@ -1,5 +1,5 @@
 import "./about.css";
-import Award from "../../img/award.png";
+import Aboutpic from "../../img/ab.JPG";
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
         <div className="a-card bg"></div>
         <div className="a-card">
           <img
-            src="https://images.pexels.com/photos/3585047/pexels-photo-3585047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            src={Aboutpic}
             alt=""
             className="a-img"
           />
@@ -27,7 +27,7 @@ const About = () => {
           aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
         </p>
         <div className="a-award">
-          <img src={Award} alt="" className="a-award-img" />
+          <img src={Aboutpic} alt="" className="a-award-img" />
           <div className="a-award-texts">
             <h4 className="a-award-title">International Design Awards 2021</h4>
             <p className="a-award-desc">

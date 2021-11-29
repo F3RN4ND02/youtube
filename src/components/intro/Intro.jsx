@@ -1,7 +1,13 @@
 import "./intro.css";
 import Me from "../../img/638.jpg";
+import { ThemeContext } from '../../context'
+import React,{ useContext } from "react";
+
+
 
 const Intro = () => {
+const theme = useContext(ThemeContext);
+const darkMode = theme.state.darkMode;
   return (
     <div className="i">
       <div className="i-left">
@@ -24,7 +30,7 @@ const Intro = () => {
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
+        <div className={darkMode ? 'i-bg' : 'i-bgd'}></div>
         <img src={Me} alt="" className="i-img" />
       </div>
     </div>
